@@ -16,7 +16,7 @@
 
 * Design must be responsive
 * Use Laravel and Vue.js
-* Use Bootstrap 4
+* Use Bootstrap
 * Use CSS preprocessor (SCSS preferred).
 * Use a Javascript task runner Webpack
 * Comment box design should be as close to example as possible
