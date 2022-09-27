@@ -1,4 +1,4 @@
-@props(['comments'])
+@props(['data'])
 
 <div class="row justify-content-center">
     <div class="col-md-8">
@@ -6,9 +6,9 @@
             {{-- last 4 comments --}}
             <div class="card-header pb-0">
                 <div class="mb-3">
-{{--                    {{$earlierComments}} earlier comments--}}
+                    {{$data['earlierComments']}} earlier comments
                 </div>
-                @foreach ($comments as $comment)
+                @foreach ($data['comments'] as $comment)
                     <x-comment :comment="$comment"/>
                 @endforeach
             </div>

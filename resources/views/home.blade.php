@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    <x-comments :comments="$comments"/>
+    <x-comments :data="$data"/>
 </div>
 @endsection

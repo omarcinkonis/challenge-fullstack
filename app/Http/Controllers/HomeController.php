@@ -23,8 +23,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $comments = Comment::latest()->take(4)->get();
-//        dd($comments);
-        return view('home')->with('comments', $comments);
+        $commentModel = new Comment();
+
+        $displayedCommentCount = 4;
+        $comments = $commentModel->getLatest($displayedCommentCount);
+        $earlierComments = $commentModel->earlierCommentCount($displayedCommentCount);
+
+        $data = [
+            'comments' => $comments,
+            'earlierComments' => $earlierComments
+        ];
+
+        return view('home')->with('data', $data);
     }
 }
