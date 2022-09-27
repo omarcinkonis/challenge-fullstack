@@ -20,3 +20,4 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('comments', CommentController::class);
+Route::resource('photos', PhotoController::class);

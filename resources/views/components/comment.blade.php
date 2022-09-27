@@ -2,9 +2,12 @@
 <div class="row">
     <div class="col">
         <div class="d-flex flex-start">
-            <img class="rounded-circle shadow-1-strong me-3"
-                 src="" alt="avatar" width="65"
-                 height="65"/>
+{{--            <img class="rounded-circle shadow-1-strong me-3"--}}
+{{--                 @php--}}
+{{--                     dd($comment->user->photo);--}}
+{{--                 @endphp--}}
+{{--                 src="{{$comment->user->photo->path}}" alt="avatar" width="65"--}}
+{{--                 height="65"/>--}}
             <div class="flex-grow-1 flex-shrink-1">
                 <div>
                     <div class="d-flex justify-content-between align-items-center">
