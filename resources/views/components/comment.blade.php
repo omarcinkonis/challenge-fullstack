@@ -9,7 +9,7 @@
                 <div>
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="mb-1">
-                            Author name <span class="small">- 2 hours ago</span>
+                            {{$comment->user->name}} <span class="small">- {{date('h:i A', strtotime($comment->created_at))}}</span>
                         </p>
                     </div>
                     <p class="small mb-0">

@@ -25,6 +25,6 @@ class HomeController extends Controller
     {
         $comments = Comment::latest()->take(4)->get();
 //        dd($comments);
-        return view('home')->with('comments', $comments);;
+        return view('home')->with('comments', $comments);
     }
 }

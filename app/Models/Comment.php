@@ -14,4 +14,9 @@ class Comment extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = ['user_id', 'text'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
