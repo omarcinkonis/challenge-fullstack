@@ -42,8 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function photo()
+    public function image()
     {
-        return $this->hasOne(Photo::class);
+        return $this->hasOne(Image::class);
     }
 }
